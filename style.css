@@ -1,8 +1,12 @@
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: 'neu';
 }
 
 html,body {
@@ -11,13 +15,14 @@ html,body {
 }
 
 #page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
+    padding: 0 2vw;
 }
 nav{
-   padding: 2vw 2vw;
+   padding: 2vw 0vw;
     width: 100%;
     display: flex;
     align-items: center;
@@ -36,7 +41,7 @@ nav{
     border: 1px solid #8a8a8a89;
     border-radius: 50px;
     font-weight: 500;
-    color: black;
+    color: #000000bb;
     font-size:18px ;
     position: relative;
     transition: all ease 0.4s;
@@ -50,7 +55,7 @@ nav{
     background-color: black;
     width: 100%;
     left: 0;
-    bottom: -41px;
+    bottom: -42px;
     border-radius: 50%;
     transition: all ease 0.4s;
     
@@ -70,4 +75,43 @@ nav{
 }
 .nav2 h4:hover a{
     color: white;
+}
+
+#center{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2.5vw;
+
+}
+#left h3{
+    width:25vw ;
+    font-size: 1.8vw;
+    line-height: 2vw;
+
+
+}
+
+#center h1{
+    font-size:8vw ;
+    line-height: 8vw;
+    text-align: right;
+
+}
+
+#page1 video{
+ position: relative;
+ width: 100%;
+ border-radius: 3px;
+ margin-top: 4vw;
+
+}
+#heroshape{
+    position: absolute;
+    width: 36vw;
+    height: 36vw;
+    background-color: #FE320A;
 }
